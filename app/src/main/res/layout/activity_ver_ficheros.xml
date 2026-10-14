@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="12dp">
+        <Button android:id="@+id/btnVerFarmacia" android:layout_width="0dp" android:layout_height="50dp" android:layout_weight="1" android:text="FARMACIA" android:textSize="14sp" android:backgroundTint="#3498DB" android:textColor="#FFFFFF" android:layout_marginEnd="4dp"/>
+        <Button android:id="@+id/btnVerAux1" android:layout_width="0dp" android:layout_height="50dp" android:layout_weight="1" android:text="AUX 1" android:textSize="14sp" android:backgroundTint="#2ECC71" android:textColor="#FFFFFF" android:layout_marginEnd="4dp"/>
+        <Button android:id="@+id/btnVerAux2" android:layout_width="0dp" android:layout_height="50dp" android:layout_weight="1" android:text="AUX 2" android:textSize="14sp" android:backgroundTint="#E67E22" android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etBuscarVer"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="Buscar por código, descripción o EAN..."
+        android:inputType="text"
+        android:background="@android:color/white"
+        android:padding="8dp"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:id="@+id/tvContadorVer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seleccione una fuente arriba"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"/>
+
+    <ListView
+        android:id="@+id/listViewFicheros"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:padding="8dp"/>
+
+</LinearLayout>

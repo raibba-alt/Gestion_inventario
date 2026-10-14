@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🏥 FARMACIA"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btnCargarFarmacia"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Seleccionar NIXFARMA.CSV"
+            android:textSize="16sp"
+            android:backgroundTint="#3498DB"
+            android:textColor="#FFFFFF"/>
+
+        <TextView
+            android:id="@+id/tvPrevFarmacia"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#FFFFFF"
+            android:padding="8dp"
+            android:text="Vista previa de Farmacia..."
+            android:textSize="12sp"
+            android:gravity="top"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📂 AUXILIAR 1"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Campos Auxiliar 1 -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="4dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cod:" android:layout_weight="1"/>
+            <EditText android:id="@+id/etAux1CodIni" android:layout_width="50dp" android:layout_height="40dp" android:inputType="number" android:layout_marginEnd="4dp" android:padding="4dp" android:background="@android:color/white"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="a"/>
+            <EditText android:id="@+id/etAux1CodFin" android:layout_width="50dp" android:layout_height="40dp" android:inputType="number" android:layout_marginStart="4dp" android:padding="4dp" android:background="@android:color/white"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Desc:" android:layout_marginStart="12dp" android:layout_weight="1"/>
+            <EditText android:id="@+id/etAux1DescIni" android:layout_width="50dp" android:layout_height="40dp" android:inputType="number" android:layout_marginEnd="4dp" android:padding="4dp" android:background="@android:color/white"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="a"/>
+            <EditText android:id="@+id/etAux1DescFin" android:layout_width="50dp" android:layout_height="40dp" android:inputType="number" android:layout_marginStart="4dp" android:padding="4dp" android:background="@android:color/white"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="8dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="EAN:" android:layout_weight="1"/>
+            <EditText android:id="@+id/etAux1EanIni" android:layout_width="50dp" android:layout_height="40dp" android:inputType="number" android:layout_marginEnd="4dp" android:padding="4dp" android:background="@android:color/white"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="a"/>
+            <EditText android:id="@+id/etAux1EanFin" android:layout_width="50dp" android:layout_height="40dp" android:inputType="number" android:layout_marginStart="4dp" android:padding="4dp" android:background="@android:color/white"/>
+            <EditText android:id="@+id/etAux1Prov" android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="1" android:hint="Proveedor" android:layout_marginStart="12dp" android:padding="4dp" android:background="@android:color/white"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnCargarAux1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Cargar Fichero Auxiliar 1"
+            android:backgroundTint="#2ECC71"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/tvPrevAux1"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#FFFFFF"
+            android:padding="8dp"
+            android:text="Vista previa Aux 1..."
+            android:textSize="12sp"
+            android:gravity="top"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- CAMPOS AUXILIAR 2 (Exactamente igual pero con IDs aux2) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📂 AUXILIAR 2"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="4dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cod:" android:layout_weight="1"/>
+            <EditText android:id="@+id/etAux2CodIni" android:layout_width="50dp" android:layout_height="40dp" android:inputType="number" android:layout_marginEnd="4dp" android:padding="4dp" android:background="@android:color/white"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="a"/>
+            <EditText android:id="@+id/etAux2CodFin" android:layout_width="50dp" android:layout_height="40dp" android:inputType="number" android:layout_marginStart="4dp" android:padding="4dp" android:background="@android:color/white"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Desc:" android:layout_marginStart="12dp" android:layout_weight="1"/>
+            <EditText android:id="@+id/etAux2DescIni" android:layout_width="50dp" android:layout_height="40dp" android:inputType="number" android:layout_marginEnd="4dp" android:padding="4dp" android:background="@android:color/white"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="a"/>
+            <EditText android:id="@+id/etAux2DescFin" android:layout_width="50dp" android:layout_height="40dp" android:inputType="number" android:layout_marginStart="4dp" android:padding="4dp" android:background="@android:color/white"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="8dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="EAN:" android:layout_weight="1"/>
+            <EditText android:id="@+id/etAux2EanIni" android:layout_width="50dp" android:layout_height="40dp" android:inputType="number" android:layout_marginEnd="4dp" android:padding="4dp" android:background="@android:color/white"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="a"/>
+            <EditText android:id="@+id/etAux2EanFin" android:layout_width="50dp" android:layout_height="40dp" android:inputType="number" android:layout_marginStart="4dp" android:padding="4dp" android:background="@android:color/white"/>
+            <EditText android:id="@+id/etAux2Prov" android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="1" android:hint="Proveedor" android:layout_marginStart="12dp" android:padding="4dp" android:background="@android:color/white"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnCargarAux2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Cargar Fichero Auxiliar 2"
+            android:backgroundTint="#E67E22"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/tvPrevAux2"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#FFFFFF"
+            android:padding="8dp"
+            android:text="Vista previa Aux 2..."
+            android:textSize="12sp"
+            android:gravity="top"
+            android:layout_marginBottom="32dp"/>
+        <Button
+            android:id="@+id/btnExportarDescargas"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="📦 EXPORTAR FICHEROS A DESCARGAS"
+            android:textSize="18sp"
+            android:backgroundTint="#8E24AA"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="40dp"/>
+    </LinearLayout>
+</ScrollView>

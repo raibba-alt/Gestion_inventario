@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tvStatusUnidades"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#856404"
+            android:background="#FFF3CD"
+            android:padding="10dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Escanear / Teclear EAN13 o Unidades:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+        <TextView
+            android:id="@+id/tvContadorTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📦 En inventario: 0 uds (0 artículos)"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="#E8F8F5"
+            android:textColor="#1A5276"
+            android:padding="15dp"
+            android:layout_margin="10dp"
+            android:visibility="visible" />
+        <EditText
+            android:id="@+id/etEanInput"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:inputType="number"
+            android:imeOptions="actionDone"
+            android:focusableInTouchMode="true"
+            android:hint="EAN13 aquí..."
+            android:textSize="24sp"
+            android:background="@android:color/white"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+            <Button
+                android:id="@+id/btnProcesar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Procesar"
+                android:textSize="18sp"
+                android:backgroundTint="#27AE60"
+                android:textColor="#FFFFFF"
+                android:layout_marginEnd="8dp" />
+            <Button
+                android:id="@+id/btnLimpiar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Limpiar"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Detalles del Artículo:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvResultado"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Esperando escaneo..."
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:scrollbars="vertical"
+            android:maxLines="100"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registro Manual (Si no encontrado):"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#721C24"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/etCodigoManual"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:hint="Código"
+                android:inputType="text"
+                android:background="@android:color/white"
+                android:padding="8dp"
+                android:layout_marginEnd="8dp" />
+            <Button
+                android:id="@+id/btnGuardarManual"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Guardar Manual"
+                android:backgroundTint="#E67E22"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
